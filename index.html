@@ -1,0 +1,435 @@
+<!-- HELLO
+-
+DevFolio is a minimal, clean, lightweight and fully responsive template for Developers!
+Created by Anil Seervi.
+-
+GitHub repo: https://github.com/AnilSeervi/DevFolio
+README: https://github.com/AnilSeervi/DevFolio/blob/master/README.md
+-
+Have fun creating your portfolio on this template!!! -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+    <!-- Title: add your Portfolio websites's title here -->
+    <title>Elciney Júnior | Developer</title>
+
+    <!-- Add some coding keywords below, Ex: (javascript, your-username, etc) -->
+    <meta
+      name="keywords"
+      content="elcineyjr, dev, typescript, javascript, react, react native"
+    />
+
+    <!-- Improve your SEO by adding a small description of you -->
+    <meta
+      name="description"
+      content="Elciney Júnior | Frontend Developer with experience in React, React Native, and TypeScript. Graduated in Computer Science."
+    />
+
+    <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+    <link rel="icon" type="image/png" href="./assets/logo.png" />
+
+    <!-- Add your primary-theme color for the value of content -->
+    <meta name="theme-color" content="#36d1dc" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <!-- Fill content with the URL of this portfolio you'll host -->
+    <meta property="og:url" content="https://devfolio.js.org/" />
+    <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
+    <meta property="og:title" content="Elciney Júnior | Developer" />
+    <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
+    <meta property="og:description" content="Check out my projects" />
+    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
+      so that a thumbnail image of your portfolio is shown while shared on other platform -->
+    <!-- TODO thumbnail -->
+    <meta
+      property="og:image"
+      content="https://devfolio.js.org/assets/devfolio.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <!-- Again fill content attr with the URL of this portfolio you'll host -->
+    <meta property="twitter:url" content="https://devfolio.js.org" />
+    <!-- Recommended to use the same text used within <title> element -->
+    <meta property="twitter:title" content="Elciney Júnior | Developer" />
+    <!-- short description that shows up while your portfolio is shared -->
+    <meta property="twitter:description" content="Check out my projects" />
+    <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
+    <!-- TODO thumbnail -->
+    <meta
+      property="twitter:image"
+      content="https://anilseervi.vercel.app/assets/devfolio.png"
+    />
+
+    <!-- link tags -->
+    <link rel="preload" as="style" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- FontAwesome Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="./javascript/scrollreveal.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./javascript/scrollveal.js"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Hero Section -->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          Hi, my name is
+          <span class="text-color-main name">Elciney Júnior</span>.
+          <br />
+          I'm a Software Developer.
+        </h1>
+        <p class="hero-cta">
+          <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
+        </p>
+      </section>
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div
+      ></a>
+    </div>
+    <!-- /END Hero Section -->
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row about-wrapper">
+          <div class="about-wrapper__image">
+            <img
+              class="img-fluid"
+              src="./assets/profile.png"
+              alt="Profile Image"
+              width="450"
+              height="350"
+            />
+          </div>
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              My name is Elciney Júnior, and I am a dedicated and passionate
+              developer from Brazil with experience in web and mobile frontend
+              development.
+            </p>
+            <p class="about-wrapper__info-text">
+              I work mostly with technologies like React, React Native, and
+              TypeScript, always striving to create intuitive and efficient user
+              interfaces. I am always eager to connect with other professionals
+              and explore opportunities that allow me to apply my skills and
+              grow as a developer.
+            </p>
+            <p class="about-wrapper__info-text">
+              Let's build something amazing together!
+            </p>
+            <!-- TODO Resume -->
+            <!-- <span class="about-wrapper__cta">
+              <a href="#" class="cta-btn cta-btn--resume">🇺🇸 View Resume</a>
+            </span>
+            <span class="about-wrapper__cta">
+              <a href="#" class="cta-btn cta-btn--resume">🇧🇷 Ver Currículo</a>
+            </span> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!--Projects Section-->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Password Generator</h3>
+              <p class="project-wrapper__text-info">
+                A simple and intuitive web application to generate safe
+                passwords. Customize your passwords with uppercase, lowercase,
+                numbers and symbols to ensure maximum safety.
+              </p>
+              <p class="project-wrapper__text-info">
+                <img
+                  src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white"
+                  alt="NextJS"
+                />
+                <img
+                  src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
+                  alt="TypeScript"
+                />
+                <img
+                  src="https://img.shields.io/badge/Mantine-ffffff?style=for-the-badge&logo=Mantine&logoColor=339af0"
+                  alt="Mantine"
+                />
+                <img
+                  src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white"
+                  alt="Styled Components"
+                />
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://password-generator-seven-wheat.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a
+                  href="https://github.com/Elcineyjr/PasswordGenerator"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a
+                href="https://github.com/Elcineyjr/PasswordGenerator"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/passgen-project.png"
+                    class="img-fluid"
+                    alt="Password Generator website Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Lumi</h3>
+              <p class="project-wrapper__text-info">
+                An elegant Mastodon client for both web and mobile devices,
+                designed to ensure you only consume content that matters to you.
+                Unlike traditional app feeds, Lumi adopts a unique approach with
+                an RSS-like feed, allowing for a more personalized and
+                streamlined browsing experience
+              </p>
+              <p class="project-wrapper__text-info">
+                <img
+                  src="https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37"
+                  alt="Expo"
+                />
+                <img
+                  src="https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+                  alt="React Native"
+                />
+                <img
+                  src="https://img.shields.io/badge/-MASTODON-%232B90D9?style=for-the-badge&logo=mastodon&logoColor=white"
+                  alt="Mastodon"
+                />
+                <img
+                  src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
+                  alt="TypeScript"
+                />
+                <img
+                  src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white"
+                  alt="Styled Components"
+                />
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://app.lumi.social/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <!-- <a href="#" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                > -->
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a
+                href="https://app.lumi.social/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/lumi-screens.png"
+                    class="img-fluid"
+                    alt="Lumi Screens"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">TV Personal</h3>
+              <p class="project-wrapper__text-info">
+                A web app created for a personal trainer to deliver
+                individualized workout plans to her clients. The website allows
+                clients to view their workout plans history, along with videos
+                and explanations for each exercise, ensuring comprehensive
+                support and guidance.
+              </p>
+              <p class="project-wrapper__text-info">
+                <img
+                  src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+                  alt="Javascript"
+                />
+                <img
+                  src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+                  alt="ReactJS"
+                />
+                <img
+                  src="https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white"
+                  alt="Kotlin"
+                />
+                <img
+                  src="https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white"
+                  alt="Spring"
+                />
+                <img
+                  src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white"
+                  alt="Postgres"
+                />
+                <img
+                  src="https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white"
+                  alt="MaterialUI"
+                />
+
+                <img
+                  src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white"
+                  alt="Styled Components"
+                />
+                <img
+                  src="https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white"
+                  alt="Redux"
+                />
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://tv-personal.netlify.app/signin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <!-- <a
+                  href="javascript:void(0);"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  >Source Code</a
+                > -->
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/tvpersonal.png"
+                    class="img-fluid"
+                    alt="TV Personal website"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper">
+          <p class="contact-wrapper__text">
+            Got a question, an idea, or a project proposal? I'm all ears! Send
+            me a message, and I'll get back to you as soon as possible. Let's
+            turn your vision into reality.
+          </p>
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/elcineyjr/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="linkedin"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/elcineyjr/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="github"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Contact Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
+          <p class="footer__text">Back to top</p>
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <hr />
+        <p class="footer__text">
+          &copy; <span id="year"></span> - Template by
+          <a
+            href="https://github.com/AnilSeervi"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Anil Seervi</a
+          >. <br />Made with &hearts;
+        </p>
+      </div>
+    </footer>
+    <!-- END Footer Section -->
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+  </body>
+</html>
